@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Chef Pavan</title>
+
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/styleHeader.css">
+        <link rel="stylesheet" href="css/agendamento.css">
+    </head>
+
+    <body>
+
+        <header>
+            <div>
+                <h1><img src="images/Chef-Pavan.png" alt="Logo Chef Pavan"></h1>
+                <nav>
+                    <ul>
+                        <li><a id="home"href="index.html">Home</a></li>
+                        <li><a id="produtos" href="Produtos.html">Produtos</a></li>
+                        <li><a id="agendamento" href="Agendamento.html">Agendamento</a></li>
+                    </ul>                    
+                </nav>
+                <p>Seu buchinho cheio é a nossa missão!</p>
+            </div>
+        </header>
+        
+        <main>
+            <h1>Agendamento</h1>
+            <p>
+                Preencha as informações e agende o melhor dia culinario da sua vida.
+                Nossa equipe entrará em contato em até 24hrs para receber sua escolha de cardapio
+                e opção de almoço ou jantar.
+                Caso o nosso contato <strong>não</strong> seja respondido em 48hrs sua resevar será <strong>cancelada</strong>.
+            </p>
+            <div id='divForm'>
+                <form>
+                    <label for="nome" class="label-text">Nome e Sobrenome</label>
+                    <input type="text" id="nome" class="input-text" required placeholder="José da Silva">
+    
+                    <label for="email" class="label-text">Email</label>
+                    <input type="email" id="email" class="input-text" required placeholder="email@domino.com">
+    
+                    <label for="telefone" class="label-text">Telefone</label>
+                    <input type="tel" id="telefone" class="input-text" required placeholder="(XX) XXXX-XXXX">
+    
+                    <label for="data" class="label-text">Data da Reserva</label>
+                    <input type="date" id="data" class="input-text" required placeholder="dd/mm/aaaa">
+
+                    <fieldset id="radio">
+                        <legend>Como você prefere ser conatatado?</legend>
+                        <label for="radio-email">
+                            <input type="radio" name="contato" required id="radio-email" value="email">
+                            Email
+                        </label>
+                        
+                        <label for="radio-telefone">
+                            <input type="radio" name="contato"  required id="radio-telefone" value="telefone">
+                            Telefone
+                        </label>
+                        
+                        <label for="radio-whatsapp">
+                            <input type="radio" name="contato" required id="radio-whatsapp" value="whatsapp">
+                            WhatsApp
+                        </label>
+                        
+                    </fieldset>
+                    <button id='addReserva' type="submit">Reservar</button>
+                </form>
+            </div>
+
+            <div id='divTabela'>
+                <table id="tabela">
+                    <thead>
+                        <tr>
+                            <th>Nome</th>
+                            <th>Telefone</th>
+                            <th>Data da Reserva</th>
+                        </tr>
+                    </thead>
+                    <tbody id='corpoTabela'>
+                        <tr class='trBody'>
+                            <td class="td" id="tdNome">Naruto Uzumaki</td>
+                            <td class="td" id="tdTelefone">**********</td>
+                            <td class="td" id="tdData">19/02/2025</td>
+                        </tr>
+                        <tr class='trBody'>
+                            <td class="td" id="tdNome">Gon Freecss</td>
+                            <td class="td" id="tdTelefone">**********</td>
+                            <td class="td" id="tdData">24/05/2022</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+
+
+
+        </main>
+
+
+
+
+        <footer>
+            <img src="images/rodape.png" alt="Panda">
+            <p>&copy; Pavan Productions</p>
+        </footer>
+    </body>
+    <script src="js/model/ReservaModel.js"></script>
+    <script src="js/controller/ReservaController.js"></script>
+    <script src="js/helper/DataHelper.js"></script>
+    <script src="js/model/ListaReservas.js"></script>
+    <script src="js/viewer/ReservaViewer.js"></script>
+    <script>
+        let controller = new ReservaController();
+        let botao = document.querySelector("#addReserva");
+        botao.addEventListener("click", function(event){
+            event.preventDefault();
+            controller.add();
+        });
+    </script>
+</html>

@@ -1,0 +1,86 @@
+main{
+    background: url("/images/fundo2.jpg") 100%;
+    background-size: cover;
+    padding: 20px;
+}
+main h1{
+    font-size: 50px;
+    text-align: center;
+    text-decoration: underline;
+    color: darkred;
+}
+main p{
+    font-size: 20px;
+    text-align: center;
+    font-style: italic;
+    margin: 10px auto;
+    width: 900px;
+}
+main strong{
+    font-weight: bold;
+}
+#divForm{
+    width: 940px;
+    padding: 20px;
+    margin: 10px auto;
+    background-color: whitesmoke;
+    opacity: 0.9;
+    border-radius: 5px;
+}
+#divForm form{
+    width: 700px;
+    margin: 10px auto;
+}
+#divForm label{
+    font-size: 25px;
+    margin-bottom: 5px;
+}
+.input-text{
+    display: block;
+    width: 668px;
+    height: 30px;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 17px;
+}
+#divForm legend{
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+#radio label{
+    display: block;
+    width: auto;
+    margin-bottom: 5px;
+}
+#addReserva{
+    margin-top: 50px;
+    padding: 5px;
+    width: 20%;
+    background-color: darkred;
+    color: aliceblue;
+    border-radius: 3px;
+}
+
+#divTabela{
+    width: 940px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: whitesmoke;
+    opacity: 0.9;
+    border-radius: 5px;
+}
+table{
+    width: 650px;
+    margin: 0 auto;
+}
+th {
+    font-size: 25px;
+    font-style: italic;
+}
+.td{
+    border: 2px solid black;
+    border-radius: 5px;
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
+}

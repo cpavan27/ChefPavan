@@ -1,0 +1,108 @@
+
+
+#divAbout{
+    width: 940px;
+    margin: 10px auto;
+    padding: 20px;
+}
+#divAbout div{
+    display: inline-block;
+    vertical-align: top;
+    width: 50%;
+    height: 100%;
+    margin-right: 5px;
+}
+#divAbout h2{
+    font-size: 40px;
+    color: darkred;
+}
+#divAbout p{
+    text-align: left;
+    box-sizing: border-box;
+    margin-top: 10px;
+    font-size: 20px;
+
+}
+#divAbout img{
+    width: 47%;
+    height: 70%;
+}
+#divPremios{
+    margin: 10px auto;
+    width: 100%;
+    background-color: rgb(70, 70, 70);
+}
+#divPremios div{
+    width: 940px;
+    margin: 0px auto;
+    padding: 10px;
+}
+#premiosTitle{
+    font-size: 40px;
+    margin-top: 10px;
+    color: azure;
+    text-decoration: overline underline;
+    font-style: italic;
+}
+#divPremios ul{
+    padding: 30px;
+}
+#divPremios li{
+    display: inline-table;
+    padding: 20px;
+    margin: 10px 5px;
+    border: 3px solid white;
+    border-radius: 5px;
+    width: 200px;
+    height: 300px;
+}
+#divPremios img{
+    width: 180px;
+}
+.premios-text{
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 20px;
+    color: aliceblue;
+}
+#divAgendamento{
+    width: 940px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 2px outset;
+    border-radius: 5px;
+}
+#divAgendamento h2{
+    margin-bottom: 20px;
+    font-size: 40px;
+    font-weight: bold;
+    font-style: italic;
+}
+#divAgendamento img{
+    width: 47%;
+    height: 70%;
+}
+#divAgendamento div{
+    display: inline-block;
+    vertical-align: top;
+    width: 50%;
+    height: 100%;
+    margin-right: 5px;
+}
+#divAgendamento p{
+    margin-bottom: 30px;
+    font-size: 23px;
+    margin-left: 5px;
+}
+#divAgendamento h3{
+    margin-top: 45px;
+    margin-bottom: 50px;
+    font-size: 25px;
+}
+#divAgendamento a{
+    color: darkred;
+}
+#divAgendamento a:hover{
+    color: gold;
+    font-size: 40px;
+}
