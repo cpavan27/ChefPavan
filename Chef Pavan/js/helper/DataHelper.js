@@ -9,11 +9,12 @@ class DataHelper {
      }
 
     static textoParaData(string) {
-        if(!/\d{4}-\d{2}-\d{2}/.test(string)){
-            throw new Error('Deve estar no formato yyyy-MM-dd');
-        }      
-        return new Date(...string.split('-')
-        .map((item, indice) => item - indice % 2));
-
+        if(/\d{4}-\d{2}-\d{2}/.test(string)){
+            return new Date(...string.split('-')
+            .map((item, indice) => item - indice % 2));
+        }else {
+            return new Date(...string.split('/').reverse().map((item, indice) => item - indice % 2));
+        }
+        
     }
 }
