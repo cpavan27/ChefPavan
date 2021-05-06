@@ -84,3 +84,7 @@ th {
     padding: 20px;
     font-size: 20px;
 }
+.destaqueVermelho{
+    background-color: rgb(221, 87, 87);
+    color: aliceblue;
+}

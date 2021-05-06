@@ -21,7 +21,9 @@ class ReservaViewer {
         
         reservaTr.appendChild(this.createTD(dado.nome,"td"));
         reservaTr.appendChild(this.createTD('**********',"td"));
-        reservaTr.appendChild(this.createTD(DataHelper.dataParaTexto(dado.data),"td"));
+        let _tdData = this.createTD(DataHelper.dataParaTexto(dado.data),"td");
+        _tdData.id = "tdData";
+        reservaTr.appendChild(_tdData);
     
         return reservaTr;
     }
