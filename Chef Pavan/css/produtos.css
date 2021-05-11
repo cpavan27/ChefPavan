@@ -1,13 +1,14 @@
 
 main{
-    margin-bottom: 100px;
+    background: linear-gradient(#FEFEFE, rgb(70, 70, 70));
+    padding: 1em;
 }
-#divProdutos {
+.produtos {
     width: 940px;
     margin: 10px auto;
     padding: 20px;
 }
-#divProdutos h1{
+.produtos h1{
     text-align: center;
     font-size: 40px;
     font-style: italic;
@@ -16,36 +17,36 @@ main{
     margin-bottom: 40px;
     
 }
-#divProdutos ul{
+.produtos ul{
     margin: 0px auto;
 }
-#divProdutos li {
+.produtos li {
     display: inline-table;
     margin: 0px 5%;
     padding: 20px;
     border: 2px outset;
     border-radius: 5px;    
 }
-#divProdutos a{
+.produtos a{
     text-decoration: none; 
 }
-#divProdutos li:hover{
+.produtos li:hover{
     transition: 0,5s;
     cursor: pointer;
     transform: scale(1.1);
 }
-#divProdutos img {
+.produtos img {
     width: 300px;
     margin-bottom: 5px;
     box-sizing: border-box;
 }
-#divProdutos h2 {
+.produtos h2 {
     font-size: 20px;
     text-align: center;
     margin-bottom: 5px;
     color: black;
 }
-#divProdutos p {
+.produtos p {
     font-size: 18px;
     text-align: center;
     color: black;

@@ -1,54 +1,81 @@
-
-
-#divAbout{
+body{
+    font-family: 'Playfair Display', serif;
+}
+main{
+    background: linear-gradient(#FEFEFE, rgb(70, 70, 70) 25%);
+    padding: 1em;
+}
+.about{
     width: 940px;
     margin: 10px auto;
     padding: 20px;
 }
-#divAbout div{
+.about div{
     display: inline-block;
     vertical-align: top;
     width: 50%;
     height: 100%;
     margin-right: 5px;
 }
-#divAbout h2{
+.about h2{
     font-size: 40px;
     color: darkred;
+    font-family: 'Great Vibes', cursive;
 }
-#divAbout p{
+.about p{
     text-align: left;
     box-sizing: border-box;
     margin-top: 10px;
     font-size: 20px;
+    line-height: 1.1;
 
 }
-#divAbout img{
+.about img{
     width: 47%;
     height: 70%;
+    box-shadow: 1px 1px 3px black;
 }
-#divPremios{
+.mapa{
+    padding: 1em;
+}
+.mapa h2{
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 1em;
+}
+.mapa div{
+    width: 940px;
+    margin: 0 auto;
+    padding: 1em;    
+}
+.mapa iframe{
+    border-radius: 5px;
+}
+.premios{
     margin: 10px auto;
     width: 100%;
-    background-color: rgb(70, 70, 70);
+    padding: 1em;    
 }
-#divPremios div{
+.premios div{
     width: 940px;
     margin: 0px auto;
     padding: 10px;
 }
-#premiosTitle{
+.premios h2{
     font-size: 40px;
+    text-align: center;
     margin-top: 10px;
     color: azure;
-    text-decoration: overline underline;
-    font-style: italic;
+    text-decoration: underline;
+    font-family: 'Dancing Script', cursive;
 }
-#divPremios ul{
+.premios ul{
     padding: 30px;
+    width: 84%;
+    margin: 0px auto;
 }
-#divPremios li{
-    display: inline-table;
+.premios li{
+    display: inline-grid;
     padding: 20px;
     margin: 10px 5px;
     border: 3px solid white;
@@ -56,8 +83,8 @@
     width: 200px;
     height: 300px;
 }
-#divPremios img{
-    width: 180px;
+.premios img{
+    width: 90%;
 }
 .premios-text{
     box-sizing: border-box;
@@ -65,44 +92,56 @@
     font-size: 20px;
     color: aliceblue;
 }
-#divAgendamento{
+.agendamento{
     width: 940px;
-    margin: 20px auto;
+    margin: 20px auto 0 auto;
     padding: 20px;
     border: 2px outset;
     border-radius: 5px;
 }
-#divAgendamento h2{
+.agendamento h2{
     margin-bottom: 20px;
     font-size: 40px;
     font-weight: bold;
     font-style: italic;
+    color: aliceblue;
 }
-#divAgendamento img{
+.agendamento img{
     width: 47%;
     height: 70%;
+    box-shadow: -2px -2px 3px black;
+    float: left;
 }
-#divAgendamento div{
+.agendamento div{
     display: inline-block;
     vertical-align: top;
     width: 50%;
     height: 100%;
     margin-right: 5px;
 }
-#divAgendamento p{
+.agendamento p{
     margin-bottom: 30px;
     font-size: 23px;
     margin-left: 5px;
+    line-height: 1.5;
+    color: aliceblue;
 }
-#divAgendamento h3{
+.agendamento h3{
     margin-top: 45px;
     margin-bottom: 50px;
     font-size: 25px;
+    color: aliceblue;
 }
-#divAgendamento a{
+.agendamento a{
     color: darkred;
 }
-#divAgendamento a:hover{
+.agendamento a:hover{
     color: gold;
-    font-size: 40px;
+}
+
+@media screen and (max-width: 480px){
+    .about, .mapa div, .premios div, .agendamento, header{
+        width: auto;
+        padding: 1em;
+    }
 }

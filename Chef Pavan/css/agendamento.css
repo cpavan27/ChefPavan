@@ -19,7 +19,7 @@ main p{
 main strong{
     font-weight: bold;
 }
-#divForm{
+.formulario{
     width: 940px;
     padding: 20px;
     margin: 10px auto;
@@ -27,11 +27,11 @@ main strong{
     opacity: 0.9;
     border-radius: 5px;
 }
-#divForm form{
+.formulario form{
     width: 700px;
     margin: 10px auto;
 }
-#divForm label{
+.formulario label{
     font-size: 25px;
     margin-bottom: 5px;
 }
@@ -43,11 +43,11 @@ main strong{
     margin-bottom: 20px;
     font-size: 17px;
 }
-#divForm legend{
+.formulario legend{
     font-size: 25px;
     margin-bottom: 10px;
 }
-#radio label{
+.tabela label{
     display: block;
     width: auto;
     margin-bottom: 5px;
@@ -61,7 +61,7 @@ main strong{
     border-radius: 3px;
 }
 
-#divTabela{
+.tabela{
     width: 940px;
     margin: 50px auto;
     padding: 20px;
