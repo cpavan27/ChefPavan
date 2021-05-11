@@ -3,11 +3,17 @@
 <html>
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
         <title>Chef Pavan</title>
 
         <link rel="stylesheet" href="css/reset.css">
         <link rel="stylesheet" href="css/styleHeader.css">
         <link rel="stylesheet" href="css/index.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Libre+Baskerville:ital@1&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Great+Vibes&family=Libre+Baskerville:ital@1&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Great+Vibes&family=Libre+Baskerville:ital@1&family=Playfair+Display&display=swap" rel="stylesheet">
     </head>
 
     <body>
@@ -26,63 +32,67 @@
         </header>
         
         <main>            
-            <div id="divAbout">
-                           
+            <section class="about">                           
                 <div>
                     <h2>Chef Pavan aqui para Você!</h2>
                     <p>O renomado Chef de cozinha Caique Pavan iniciou um novo serviço de atendimento
                         exclusivo onde o cliente reserva um dia e durante o almoço ou o jantar será servido
                         pelo grande chef, com um cardapio a sua escolha indo desde um belo American Barbecue
                         com seus pratos defumados até a culinaria Japonesa recheada de peixes, legumes e carnes deliciosas.
-                    </p>
-                    
+                    </p>                    
                 </div>
                 <img src="images/prato.jpg" alt="Chef colocando tempero em um prato">
-            </div>
+            </section>
 
+            <section class="mapa">
+                <h2>Onde atendemos?</h2>
+                <div>                    
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1837.732631968985!2d-47.053035728013946!3d-22.896203819595637!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c8cf51bcaf6c7d%3A0x45436e415b5ec4a2!2sR.%20Maria%20Monteiro%20-%20Cambu%C3%AD%2C%20Campinas%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1620761656604!5m2!1spt-BR!2sbr" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </section>
             
-            <div id='divPremios'>                    
+            <section class='premios'>                    
                 <div>
-                    <h2 id="premiosTitle">Premios e Reconhecimentos</h2>
+                    <h2>Premios e Reconhecimentos</h2>
                     <ul>
                         <li>
                             <img src="images/trofeu-chef.png">
-                            <h1 class="premios-text">Melhor Chef de São Paulo</h1>
-                            <h2 class="premios-text">Revista Veja 2015</h2>
+                            <h3 class="premios-text">Melhor Chef de São Paulo</h3>
+                            <h4 class="premios-text">Revista Veja 2015</h4>
                         </li>
 
                         <li>
                             <img src="images/trofeu-chef.png">
                             <h1 class="premios-text">Premio Lugares para Comer</h1>
-                            <h2 class="premios-text">Revista Eatin'Out 2018</h2>
+                            <h4 class="premios-text">Revista Eatin'Out 2018</h4>
                         </li>
 
                         <li>
                             <img src="images/trofeu-chef.png">
                             <h1 class="premios-text">Melhor comida Francesa fora da França</h1>
-                            <h2 class="premios-text">Revista l’Auberge de l’Eridan 2005</h2>
+                            <h4 class="premios-text">Revista l’Auberge de l’Eridan 2005</h4>
                         </li>
 
                         <li>
                             <img src="images/trofeu-chef.png">
                             <h1 class="premios-text">Barbecue Master</h1>
-                            <h2 class="premios-text">Barbecue magazine 2016</h2>
+                            <h4 class="premios-text">Barbecue magazine 2016</h4>
                         </li>
                         <li>
                             <img src="images/trofeu-chef.png">
                             <h1 class="premios-text">Mestre do Sushi</h1>
-                            <h2 class="premios-text">Revista Veja 2019</h2>
+                            <h4 class="premios-text">Revista Veja 2019</h4>
                         </li>
                         <li>
                             <img src="images/trofeu-chef.png">
                             <h1 class="premios-text">Premio Filho da Italia</h1>
-                            <h2 class="premios-text">Ragazzo del sud 2020</h2>
+                            <h4 class="premios-text">Ragazzo del sud 2020</h4>
                         </li>
                     </ul>
                 </div>
-            </div>
-            
-            <div id="divAgendamento">
+            </section>
+
+            <section class="agendamento">
                 <h2>Agende o melhor dia culinario da sua vida!</h2>
                 <img src="images/carne.png" alt="Carne Wagyu">
                 <div>
@@ -93,11 +103,8 @@
                     </p>
                 </div>                
                 <h3>Agende sua reserva <a href="Agendamento.html">AQUI</a></h3>
-            </div>
-            
+            </section>            
         </main>
-
-        
         <footer>
             <img src="images/rodape.png" alt="Panda">
             <p>&copy; Pavan Productions</p>
